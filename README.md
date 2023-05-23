@@ -1,9 +1,17 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/oVdpkQEW)
-# Assignment_2-Part-2
+Speaker Identification using Machine Learning
+In this project, we aim to solve speaker identification problem using machine learning techniques. We extract informative audio features from labeled audio data, and train a classifier to predict the speaker.
 
-- Deadline: May 5, 11:59 pm
+Background
+Speaker identification has a wide range of applications including authentication, forensic analysis and mobile health analytics. It can help in identifying conversation patterns which can be used to infer social habits over time.
 
-- Add your contributions here
-Austin: Did speaker identification code and added training and test voice files \
-Ryan: Did MFCC and formant features and added training voice file \
-Runyu: added training voice file
+Dependencies
+Python Speech Features: Install using pip install python_speech_features
+Audiolazy: Install using pip install audiolazy
+Data Collection
+The dataset consists of audio data from at least 3 different speakers. Each audio session is at least 3 minutes long. There's also a no-speaker session to capture different acoustic environments.
+
+Naming Convention
+The audio files are named as speaker-data-*-#.wav, where * is replaced by the speaker’s name or identifier, and # is the index of that speaker’s data.
+
+Feature Extraction
+The features.py script is used to extract features from the audio data. It computes Formant Features and Delta Coefficients, which are highly informative for speaker identification.
